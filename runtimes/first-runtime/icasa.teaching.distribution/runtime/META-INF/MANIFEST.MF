@@ -1,0 +1,102 @@
+Manifest-Version: 1.0
+DeploymentPackage-Copyright: ADELE Research Group
+DeploymentPackage-Version: 1.2.7.SNAPSHOT
+Tool: de.akquinet.gomobile:maven-dp-plugin - 1.0.1-SNAPSHOT
+DeploymentPackage-Vendor: ADELE Research Group
+DeploymentPackage-License: Apache License - Version 2.0
+DeploymentPackage-ContactAddress: http://www-adele.imag.fr/
+DeploymentPackage-Name: iCasa :: icasa.simulator.dp
+DeploymentPackage-SymbolicName: fr.liglab.adele.icasa.simulator.dp
+Content-Type: application/vnd.osgi.dp
+Created-At: 1449222617641
+DeploymentPackage-Description: iCasa :: icasa.simulator.dp
+Created-By: 1.8.0_60-ea (Oracle Corporation)
+
+Name: bundles/simulator.api-1.2.7-SNAPSHOT.jar
+SHA1-Digest: 9e654ce48e1923b9d500c92fc722af4fa85644dd
+Bundle-SymbolicName: simulator.api
+Bundle-Version: 1.2.7.SNAPSHOT
+
+Name: bundles/simulator.impl-1.2.7-SNAPSHOT.jar
+SHA1-Digest: 98629b60b66ec8025bea4f1cd672f123f56e2630
+Bundle-SymbolicName: simulator.impl
+Bundle-Version: 1.2.7.SNAPSHOT
+
+Name: bundles/device.light-1.2.7-SNAPSHOT.jar
+SHA1-Digest: e6b1f3001a9c279efbb7d2e18e25942408cbb4a0
+Bundle-SymbolicName: device.light
+Bundle-Version: 1.2.7.SNAPSHOT
+
+Name: bundles/device.sprinkler-1.2.7-SNAPSHOT.jar
+SHA1-Digest: 348eb9267f13f4755bade6a3f77ec56b373df58a
+Bundle-SymbolicName: device.sprinkler
+Bundle-Version: 1.2.7.SNAPSHOT
+
+Name: bundles/device.sound-1.2.7-SNAPSHOT.jar
+SHA1-Digest: acb15ebfd9a1f617d9d3a3fae5af417945d3928c
+Bundle-SymbolicName: device.sound
+Bundle-Version: 1.2.7.SNAPSHOT
+
+Name: bundles/device.temperature-1.2.7-SNAPSHOT.jar
+SHA1-Digest: 215583acf46a37b7093bae356356ec0823727227
+Bundle-SymbolicName: device.temperature
+Bundle-Version: 1.2.7.SNAPSHOT
+
+Name: bundles/device.gasSensor-1.2.7-SNAPSHOT.jar
+SHA1-Digest: a2d3bdb7003aee2c65b44d299f9e403dfcd89951
+Bundle-SymbolicName: device.gasSensor
+Bundle-Version: 1.2.7.SNAPSHOT
+
+Name: bundles/device.presence-1.2.7-SNAPSHOT.jar
+SHA1-Digest: a05231d5539ac995f4bc687cb699ecd4c0b8dc0e
+Bundle-SymbolicName: device.presence
+Bundle-Version: 1.2.7.SNAPSHOT
+
+Name: bundles/device.security-1.2.7-SNAPSHOT.jar
+SHA1-Digest: 58d8491ead36760f4b9eabd8a60e99bcf44792fd
+Bundle-SymbolicName: device.security
+Bundle-Version: 1.2.7.SNAPSHOT
+
+Name: bundles/device.motion-1.2.7-SNAPSHOT.jar
+SHA1-Digest: 49a0e54336c36b252110a46fbc9bed0618df73fa
+Bundle-SymbolicName: device.motion
+Bundle-Version: 1.2.7.SNAPSHOT
+
+Name: bundles/device.power-1.2.7-SNAPSHOT.jar
+SHA1-Digest: 5a7ec53a8235bdc3abd7c097a053142d77c8cec9
+Bundle-SymbolicName: device.power
+Bundle-Version: 1.2.7.SNAPSHOT
+
+Name: bundles/device.push.button-1.2.7-SNAPSHOT.jar
+SHA1-Digest: c3d9cee20a8e267d4ce166b93519ee27a0fbe6c2
+Bundle-SymbolicName: device.push.button
+Bundle-Version: 1.2.7.SNAPSHOT
+
+Name: bundles/device.door.window-1.2.7-SNAPSHOT.jar
+SHA1-Digest: 3ee3dbab31952fa246b86a553f24edfabb75e4d8
+Bundle-SymbolicName: device.door.window
+Bundle-Version: 1.2.7.SNAPSHOT
+
+Name: bundles/device.personal-1.2.7-SNAPSHOT.jar
+SHA1-Digest: e89a1f92909032622256d0ef981a471eb7fb9a08
+Bundle-SymbolicName: device.personal
+Bundle-Version: 1.2.7.SNAPSHOT
+
+Name: bundles/simulator.remote-1.2.7-SNAPSHOT.jar
+SHA1-Digest: b69c9dcbebaa42a17d3e38c10a6179a9c74b7996
+Bundle-SymbolicName: simulator.remote
+Bundle-Version: 1.2.7.SNAPSHOT
+
+Name: bundles/json-service-json.org-0.4.0.jar
+SHA1-Digest: ae538443a93e97bac09364b5d796f8d55a53e78d
+Bundle-SymbolicName: org.ow2.chameleon.json.json.org-implementation
+Bundle-Version: 0.4.0
+
+Name: META-INF/NOTICE
+SHA1-Digest: c8cd29f732f49115b223ff76ef194e2b9a5e51f9
+Resource-Processor: null
+
+Name: META-INF/LICENSE
+SHA1-Digest: 95769b21ff5e0c6ee04605087e70345771eee9fa
+Resource-Processor: null
+

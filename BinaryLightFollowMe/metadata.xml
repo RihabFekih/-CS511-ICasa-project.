@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ipojo xmlns="org.apache.felix.ipojo">
+  <component classname="com.example.binary.follow.me.BinaryFollowMeImpl" name="BinaryFollowMe">
+    <requires aggregate="true" optional="true" specification="fr.liglab.adele.icasa.device.light.BinaryLight" field="binaryLights">
+      <callback method="bindbinaryLight" type="bind"/>
+      <callback method="unbindbinaryLight" type="unbind"/>
+    </requires>
+    <callback method="start" transition="validate"/>
+    <callback method="stop" transition="invalidate"/>
+    <requires aggregate="true" optional="true" specification="fr.liglab.adele.icasa.device.presence.PresenceSensor" field="presenceSensors">
+      <callback method="bindpresenceSensor" type="bind"/>
+      <callback method="unbindpresenceSensor" type="unbind"/>
+    </requires>
+    <requires aggregate="true" optional="true" specification="fr.liglab.adele.icasa.device.light.DimmerLight" field="dimmerLights">
+      <callback method="binddimmerLight" type="bind"/>
+      <callback method="unbinddimmerLight" type="unbind"/>
+    </requires>
+    <provides specifications="com.example.binary.follow.me.configuration.FollowMeConfiguration"/>
+  </component>
+  <instance component="BinaryFollowMe" name="my.first.follow.me"/>
+  <component classname="com.example.temperature.Controller.TemperatureControllerImpl" name="TemperatureController">
+    <callback method="start" transition="validate"/>
+    <callback method="stop" transition="invalidate"/>
+    <requires aggregate="true" optional="true" specification="fr.liglab.adele.icasa.device.temperature.Heater" field="heaters">
+      <callback method="bindHeater" type="bind"/>
+      <callback method="unbindHeater" type="unbind"/>
+    </requires>
+    <requires aggregate="true" optional="true" specification="fr.liglab.adele.icasa.device.temperature.Cooler" field="coolers">
+      <callback method="bindCooler" type="bind"/>
+      <callback method="unbindCooler" type="unbind"/>
+    </requires>
+    <requires aggregate="true" optional="true" specification="fr.liglab.adele.icasa.device.temperature.Thermometer" field="thermometers">
+      <callback method="bindThermometer" type="bind"/>
+      <callback method="unbindThermometer" type="unbind"/>
+    </requires>
+    <provides specifications="fr.liglab.adele.icasa.service.scheduler.PeriodicRunnable"/>
+    <provides specifications="com.example.temperature.Controller.configuration.TemperatureConfiguration"/>
+  </component>
+  <instance component="TemperatureController" name="myTemperatureController"/>
+</ipojo>

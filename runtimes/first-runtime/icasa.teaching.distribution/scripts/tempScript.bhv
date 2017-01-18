@@ -1,0 +1,63 @@
+<behavior startdate="27/10/2011-00:00:00" factor="1440">
+	 
+	    <create-zone id="livingroom" leftX="410" topY="20" X-Length="245" Y-Length="340" />
+	<add-zone-variable zoneId="livingroom" variable="Illuminance" />
+	<modify-zone-variable zoneId="livingroom" variable="Temperature"  value="286"/>
+	 
+
+	    
+	 <!-- Creating a Thermometer, a Heater and a Cooler-->
+    <create-device id="Ther1" type="iCasa.Thermometer" />
+    <create-device id="Heat1" type="iCasa.Heater" />
+    <create-device id="Cool1" type="iCasa.Cooler" />
+        
+	 <!-- Creating a Thermometer, a Heater and a Cooler-->
+    <create-device id="Ther2" type="iCasa.Thermometer" />
+    <create-device id="Heat2" type="iCasa.Heater" />
+    <create-device id="Cool2" type="iCasa.Cooler" />
+        
+	 <!-- Creating a Thermometer, a Heater and a Cooler-->
+    <create-device id="Ther3" type="iCasa.Thermometer" />
+    <create-device id="Heat3" type="iCasa.Heater" />
+    <create-device id="Cool3" type="iCasa.Cooler" />
+        
+	 <!-- Creating a Thermometer, a Heater and a Cooler-->
+    <create-device id="Ther4" type="iCasa.Thermometer" />
+    <create-device id="Heat4" type="iCasa.Heater" />
+    <create-device id="Cool4" type="iCasa.Cooler" />
+	
+	
+	   <move-device-zone deviceId="Heat1" zoneId="livingroom" />
+    <move-device-zone deviceId="Ther1" zoneId="livingroom" />
+    <move-device-zone deviceId="Cool1" zoneId="livingroom" />
+	
+	<create-zone id="kitchen"  leftX="410" topY="370" X-Length="245" Y-Length="210" />	 
+	<add-zone-variable zoneId="kitchen" variable="Illuminance" />
+	<modify-zone-variable zoneId="kitchen" variable="Temperature"  value="283"/>
+	
+	   <move-device-zone deviceId="Heat2" zoneId="kitchen" />
+    <move-device-zone deviceId="Ther2" zoneId="kitchen" />
+    <move-device-zone deviceId="Cool2" zoneId="kitchen" />
+	
+	    
+	<create-zone id="bedroom"  leftX="55" topY="370" X-Length="259" Y-Length="210" />		
+	<add-zone-variable zoneId="bedroom" variable="Illuminance" />
+	<modify-zone-variable zoneId="bedroom" variable="Temperature"  value="288"/>
+	
+	   <move-device-zone deviceId="Heat3" zoneId="bedroom" />
+    <move-device-zone deviceId="Ther3" zoneId="bedroom" />
+    <move-device-zone deviceId="Cool3" zoneId="bedroom" />
+	    
+	    
+	  <create-zone id="bathroom"  leftX="55" topY="20" X-Length="260" Y-Length="340" />	
+	<add-zone-variable zoneId="bathroom" variable="Illuminance" />
+	<modify-zone-variable zoneId="bathroom" variable="Temperature"  value="291"/>
+	
+	   <move-device-zone deviceId="Heat4" zoneId="bathroom" />
+    <move-device-zone deviceId="Ther4" zoneId="bathroom" />
+    <move-device-zone deviceId="Cool4" zoneId="bathroom" />
+	  
+	    
+	
+	
+</behavior>
